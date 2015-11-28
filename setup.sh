@@ -20,10 +20,11 @@ then
   wget -nv -q https://oss.sonatype.org/content/repositories/releases/org/mongodb/mongo-java-driver/3.1.1/mongo-java-driver-3.1.1.jar
   wget -nv -q http://download.elastic.co/hadoop/elasticsearch-hadoop-2.2.0-beta1.zip
   unzip elasticsearch-hadoop-2.2.0-beta1.zip
-  cp elasticsearch-hadoop-2.2.0-beta1/elasticsearch-spark_2.10-2.2.0-beta1.jar .
+  cp elasticsearch-hadoop-2.2.0-beta1/dist/elasticsearch-spark_2.10-2.2.0-beta1.jar .
   cd ..
 fi
 
+cd /vagrant/_elasticsearch
 
 if [ ! -f /vagrant/_elasticsearch/kibana-$KIBANA_VERSION-linux-x64.tar.gz ]
 then
